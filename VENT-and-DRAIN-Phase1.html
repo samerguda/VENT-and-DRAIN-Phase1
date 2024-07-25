@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENT and DRAIN Activities</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            margin-right: 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>VENT Activities</h2>
+    <table id="ventTable">
+        <tr>
+            <th>Serial</th>
+            <th>Activity</th>
+        </tr>
+        <!-- VENT Table Data -->
+        <tr><td>1</td><td>KP 1+239 VENT SHAFT No 1</td></tr>
+        <tr><td>2</td><td>KP 4+383 VENT SHAFT No 2</td></tr>
+        <tr><td>3</td><td>VENT STATION-3 (8+185.47kp)</td></tr>
+        <tr><td>4</td><td>VENT STATION-4 (8+610.02kp)</td></tr>
+        <tr><td>5</td><td>M-VENT STATION-1 (8+872.71kp)</td></tr>
+        <tr><td>6</td><td>M-VENT STATION-2 (9+639.98kp)</td></tr>
+        <tr><td>7</td><td>M-VENT STATION-3 (9+913.49kp)</td></tr>
+        <tr><td>8</td><td>M-VENT STATION-4 (10+038.17kp)</td></tr>
+        <tr><td>9</td><td>VENT STATION-5 (10+259.26kp)</td></tr>
+        <tr><td>10</td><td>M-VENT STATION-5 (12+118.81kp)</td></tr>
+        <tr><td>11</td><td>M-VENT STATION-6 (13+206.54kp)</td></tr>
+        <tr><td>12</td><td>VENT STATION-6 (13+527.06kp)</td></tr>
+        <tr><td>13</td><td>M-VENT STATION-7 (14+572.05kp)</td></tr>
+        <tr><td>14</td><td>M-VENT STATION-8 (16+618.96kp)</td></tr>
+        <tr><td>15</td><td>VENT STATION-7 (17+484.88kp)</td></tr>
+        <tr><td>16</td><td>M-VENT STATION-9 (17+712.57kp)</td></tr>
+        <tr><td>17</td><td>VENT STATION-8 (26+988.55kp)</td></tr>
+        <tr><td>18</td><td>VENT STATION-9 (30+887.61kp)</td></tr>
+        <tr><td>19</td><td>VENT STATION-10 (32+874.01kp)</td></tr>
+        <tr><td>20</td><td>VENT STATION-11 (33+593.24kp)</td></tr>
+        <tr><td>21</td><td>VENT STATION-12 (34+109.78kp)</td></tr>
+        <tr><td>22</td><td>M-VENT STATION-10 (37+715.12kp)</td></tr>
+        <tr><td>23</td><td>VENT STATION-13 (40+514.14kp)</td></tr>
+        <tr><td>24</td><td>VENT STATION-14 (41+229.44kp)</td></tr>
+        <tr><td>25</td><td>VENT STATION-15 (43+930.18kp)</td></tr>
+        <tr><td>26</td><td>KP 43+980 VENT SHAFT No 25</td></tr>
+        <tr><td>27</td><td>KP 44+935 VENT SHAFT No 26</td></tr>
+        <tr><td>28</td><td>KP 46+467 VENT SHAFT No 27</td></tr>
+        <tr><td>29</td><td>KP 48+303 VENT SHAFT No 28</td></tr>
+        <tr><td>30</td><td>KP 48+775 VENT SHAFT No 29</td></tr>
+        <tr><td>31</td><td>KP 49+636 VENT SHAFT No 30</td></tr>
+        <tr><td>32</td><td>KP 50+543 VENT SHAFT No 31</td></tr>
+        <tr><td>33</td><td>KP 51+053 VENT SHAFT No 32</td></tr>
+        <tr><td>34</td><td>KP 52+548 VENT SHAFT No 33</td></tr>
+        <tr><td>35</td><td>KP 53+437 VENT SHAFT No 34</td></tr>
+        <tr><td>36</td><td>KP 54+369 VENT SHAFT No 35</td></tr>
+        <tr><td>37</td><td>KP 55+548 VENT SHAFT No 36</td></tr>
+        <tr><td>38</td><td>KP 56+911 VENT SHAFT No 37</td></tr>
+        <tr><td>39</td><td>KP 57+177 VENT SHAFT No 38</td></tr>
+        <tr><td>40</td><td>KP 57+521 VENT SHAFT No 39</td></tr>
+        <tr><td>41</td><td>KP 57+935 VENT SHAFT No 40</td></tr>
+        <tr><td>42</td><td>KP 58+720 VENT SHAFT No 41</td></tr>
+        <tr><td>43</td><td>KP 58+959 VENT SHAFT No 42</td></tr>
+    </table>
+    <button onclick="printTable('ventTable')">Print VENT Table</button>
+    <button onclick="copyTable('ventTable')">Copy VENT Table</button>
+
+    <h2>DRAIN Activities</h2>
+    <table id="drainTable">
+        <tr>
+            <th>Serial</th>
+            <th>Activity</th>
+        </tr>
+        <!-- DRAIN Table Data -->
+        <tr><td>1</td><td>KP 1+922 DRAIN SHAFT No 1</td></tr>
+        <tr><td>2</td><td>DRAIN STATION-2 (8+438.34kp)</td></tr>
+        <tr><td>3</td><td>DRAIN STATION-3 (8+803.93kp)</td></tr>
+        <tr><td>4</td><td>DRAIN STATION-4 (9+703.88kp)</td></tr>
+        <tr><td>5</td><td>DRAIN STATION-5 (10+461.55kp)</td></tr>
+        <tr><td>6</td><td>DRAIN STATION-6 (12+245.5kp)</td></tr>
+        <tr><td>7</td><td>DRAIN STATION-7 (14+689.36kp)</td></tr>
+        <tr><td>8</td><td>WASHOUT DRAIN STATION-2 (18+618.77kp)</td></tr>
+        <tr><td>9</td><td>DRAIN STATION-8 (24+929.81kp)</td></tr>
+        <tr><td>10</td><td>DRAIN STATION-9 (28+465.97kp)</td></tr>
+        <tr><td>11</td><td>DRAIN STATION-10 (33+616.99kp)</td></tr>
+        <tr><td>12</td><td>DRAIN STATION-11 (38+811.21kp)</td></tr>
+        <tr><td>13</td><td>WASHOUT DRAIN STATION-3 (41+033.42kp)</td></tr>
+        <tr><td>14</td><td>DRAIN STATION-12 (43+946.72kp)</td></tr>
+        <tr><td>15</td><td>KP 44+000 DRAIN SHAFT No 12</td></tr>
+        <tr><td>16</td><td>KP 45+022 DRAIN SHAFT No 13</td></tr>
+        <tr><td>17</td><td>KP 46+579 DRAIN SHAFT No 14</td></tr>
+        <tr><td>18</td><td>KP 48+373 DRAIN SHAFT No 15</td></tr>
+        <tr><td>19</td><td>KP 48+939 DRAIN SHAFT No 16</td></tr>
+        <tr><td>20</td><td>KP 49+711 DRAIN SHAFT No 17</td></tr>
+        <tr><td>21</td><td>KP 51+284 DRAIN SHAFT No 18</td></tr>
+        <tr><td>22</td><td>KP 52+657 DRAIN SHAFT No 19</td></tr>
+        <tr><td>23</td><td>KP 53+905 DRAIN SHAFT No 20</td></tr>
+        <tr><td>24</td><td>KP 55+667 DRAIN SHAFT No 21</td></tr>
+        <tr><td>25</td><td>KP 57+006 DRAIN SHAFT No 22</td></tr>
+        <tr><td>26</td><td>KP 57+309 DRAIN SHAFT No 23</td></tr>
+        <tr><td>27</td><td>KP 57+761 DRAIN SHAFT No 24</td></tr>
+        <tr><td>28</td><td>KP 58+377 DRAIN SHAFT No 25</td></tr>
+        <tr><td>29</td><td>KP 59+415 DRAIN SHAFT No 26</td></tr>
+    </table>
+    <button onclick="printTable('drainTable')">Print DRAIN Table</button>
+    <button onclick="copyTable('drainTable')">Copy DRAIN Table</button>
+
+    <script>
+        function printTable(tableId) {
+            var divToPrint = document.getElementById(tableId);
+            var newWin = window.open("");
+            newWin.document.write(divToPrint.outerHTML);
+            newWin.print();
+            newWin.close();
+        }
+
+        function copyTable(tableId) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById(tableId));
+            window.getSelection().removeAllRanges(); // clear current selection
+            window.getSelection().addRange(range); // to select text
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges(); // to deselect
+            alert("Table copied to clipboard");
+        }
+    </script>
+
+</body>
+</html>
+
